@@ -56,9 +56,8 @@
 		B4FCC27024D539E900E18560 /* SwiftInMotion */ = {
 			isa = PBXGroup;
 			children = (
-				B4FCC27124D539E900E18560 /* AppDelegate.swift */,
-				B4FCC27324D539E900E18560 /* SceneDelegate.swift */,
-				B4FCC27524D539E900E18560 /* ContentView.swift */,
+				B4FCC28624D53A5C00E18560 /* Views */,
+				B4FCC28524D53A5400E18560 /* App */,
 				B4FCC27724D539EB00E18560 /* Assets.xcassets */,
 				B4FCC27C24D539EB00E18560 /* LaunchScreen.storyboard */,
 				B4FCC27F24D539EB00E18560 /* Info.plist */,
@@ -73,6 +72,23 @@
 				B4FCC27A24D539EB00E18560 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4FCC28524D53A5400E18560 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B4FCC27124D539E900E18560 /* AppDelegate.swift */,
+				B4FCC27324D539E900E18560 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B4FCC28624D53A5C00E18560 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B4FCC27524D539E900E18560 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
