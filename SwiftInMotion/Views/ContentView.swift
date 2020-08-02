@@ -53,6 +53,7 @@ struct MotionReader<Content>: View where Content: View {
     @State private var currentOffset: CGSize = .zero
     @State private var timer = Timer.publish(every: 1/30, on: .main, in: .common).autoconnect()
     @ObservedObject var deviceOrientation = DeviceOrientation()
+    @Environment(\.accessibilityReduceMotion) var isReduceMotionOn: Bool
 
     init(motionRange: ClosedRange<Double> = (-50.0...50.0),
          motionStrength: Double = 50,
@@ -105,7 +106,9 @@ struct MotionReader<Content>: View where Content: View {
     }
 
     private var shouldEnableMotion: Bool {
-        !ProcessInfo.processInfo.isLowPowerModeEnabled && motionManager.isAccelerometerAvailable
+        !ProcessInfo.processInfo.isLowPowerModeEnabled &&
+            motionManager.isAccelerometerAvailable &&
+            !isReduceMotionOn
     }
 }
 
