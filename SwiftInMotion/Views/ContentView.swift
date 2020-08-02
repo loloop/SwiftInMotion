@@ -23,7 +23,7 @@ struct Card: View {
                 Image("porsche")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                    .scaleEffect(1.2)
+                .scaleEffect(2)
                 .offset(offset)
             }
             LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.3), .clear]),
@@ -55,7 +55,7 @@ struct MotionReader<Content>: View where Content: View {
     @ObservedObject var deviceOrientation = DeviceOrientation()
     @Environment(\.accessibilityReduceMotion) var isReduceMotionOn: Bool
 
-    init(motionRange: ClosedRange<Double> = (-50.0...50.0),
+    init(motionRange: ClosedRange<Double> = (-100.0...100.0),
          motionStrength: Double = 50,
          @ViewBuilder content: @escaping (CGSize) -> Content) {
         minimum = motionRange.lowerBound
