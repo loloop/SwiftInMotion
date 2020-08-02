@@ -74,6 +74,9 @@ struct MotionReader<Content>: View where Content: View {
                 self.motionManager.accelerometerUpdateInterval = 1/30
                 self.motionManager.startAccelerometerUpdates()
             }
+            .onDisappear {
+                self.motionManager.stopAccelerometerUpdates()
+            }
             .onReceive(timer) { publisher in
                 guard self.shouldEnableMotion,
                     let data = self.motionManager.accelerometerData else { return }
