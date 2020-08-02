@@ -45,7 +45,7 @@ struct Card: View {
 struct MotionReader<Content>: View where Content: View {
 
     private let contentView: (CGSize) -> Content
-    private let motionManager = CMMotionManager()
+    private let motionManager: CMMotionManager = .shared
     private let strength: Double
     private let minimum: Double
     private let maximum: Double
@@ -125,6 +125,10 @@ final class DeviceOrientation: ObservableObject {
                 self?.deviceOrientation = device.orientation
             }
     }
+}
+
+extension CMMotionManager {
+    static var shared = CMMotionManager()
 }
 
 struct ContentView_Previews: PreviewProvider {
