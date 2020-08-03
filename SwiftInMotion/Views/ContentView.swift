@@ -17,12 +17,11 @@ struct ContentView: View {
 struct Card: View {
     var body: some View {
         ZStack(alignment: .topLeading) {
-            MotionReader { offset in
-                Image("porsche")
+            Image("porsche")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .parallaxing()
-            }
+
             LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.3), .clear]),
                            startPoint: .top, endPoint: .bottom)
             Text("Porsche")

@@ -17,8 +17,8 @@ struct MotionReader<Content>: View where Content: View {
     private let strength: Double
     private let minimum: Double
     private let maximum: Double
+    private let timer = Timer.publish(every: 1/30, on: .main, in: .common).autoconnect()
     @State private var currentOffset: MotionProxy = .zero
-    @State private var timer = Timer.publish(every: 1/30, on: .main, in: .common).autoconnect()
     @ObservedObject var deviceOrientation = DeviceOrientation()
     @Environment(\.accessibilityReduceMotion) var isReduceMotionOn: Bool
 
