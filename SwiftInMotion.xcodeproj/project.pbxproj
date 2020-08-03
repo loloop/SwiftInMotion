@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B44EA38224D8573100B524D2 /* MotionReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44EA38124D8573100B524D2 /* MotionReader.swift */; };
+		B44EA38424D8576F00B524D2 /* View+Parallax.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44EA38324D8576F00B524D2 /* View+Parallax.swift */; };
+		B44EA38624D8578200B524D2 /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44EA38524D8578200B524D2 /* DeviceOrientation.swift */; };
+		B44EA38824D8579B00B524D2 /* CMMotionManager+Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44EA38724D8579B00B524D2 /* CMMotionManager+Shared.swift */; };
 		B4FCC27224D539E900E18560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FCC27124D539E900E18560 /* AppDelegate.swift */; };
 		B4FCC27424D539E900E18560 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FCC27324D539E900E18560 /* SceneDelegate.swift */; };
 		B4FCC27624D539E900E18560 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FCC27524D539E900E18560 /* ContentView.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B44EA38124D8573100B524D2 /* MotionReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionReader.swift; sourceTree = "<group>"; };
+		B44EA38324D8576F00B524D2 /* View+Parallax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Parallax.swift"; sourceTree = "<group>"; };
+		B44EA38524D8578200B524D2 /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
+		B44EA38724D8579B00B524D2 /* CMMotionManager+Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CMMotionManager+Shared.swift"; sourceTree = "<group>"; };
 		B4FCC26E24D539E900E18560 /* SwiftInMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftInMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4FCC27124D539E900E18560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4FCC27324D539E900E18560 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +70,8 @@
 				B4FCC27C24D539EB00E18560 /* LaunchScreen.storyboard */,
 				B4FCC27F24D539EB00E18560 /* Info.plist */,
 				B4FCC27924D539EB00E18560 /* Preview Content */,
+				B44EA38524D8578200B524D2 /* DeviceOrientation.swift */,
+				B44EA38724D8579B00B524D2 /* CMMotionManager+Shared.swift */,
 			);
 			path = SwiftInMotion;
 			sourceTree = "<group>";
@@ -87,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				B4FCC27524D539E900E18560 /* ContentView.swift */,
+				B44EA38124D8573100B524D2 /* MotionReader.swift */,
+				B44EA38324D8576F00B524D2 /* View+Parallax.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +176,10 @@
 			files = (
 				B4FCC27224D539E900E18560 /* AppDelegate.swift in Sources */,
 				B4FCC27424D539E900E18560 /* SceneDelegate.swift in Sources */,
+				B44EA38424D8576F00B524D2 /* View+Parallax.swift in Sources */,
+				B44EA38224D8573100B524D2 /* MotionReader.swift in Sources */,
+				B44EA38824D8579B00B524D2 /* CMMotionManager+Shared.swift in Sources */,
+				B44EA38624D8578200B524D2 /* DeviceOrientation.swift in Sources */,
 				B4FCC27624D539E900E18560 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
