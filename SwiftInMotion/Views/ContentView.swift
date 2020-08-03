@@ -10,7 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Card()
+        MotionReader { proxy in
+            Card().motionEffect()
+        }
     }
 }
 
@@ -20,7 +22,7 @@ struct Card: View {
             Image("porsche")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .parallaxing()
+                .motionEffect()
 
             LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.3), .clear]),
                            startPoint: .top, endPoint: .bottom)
